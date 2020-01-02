@@ -1,0 +1,43 @@
+import React from 'react'
+import TestRenderer from 'react-test-renderer'
+import { configure, mount } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import Game from './Game'
+
+configure({ adapter: new Adapter() })
+
+let renderer
+beforeEach(() => {
+  renderer = mount(
+    <Game/>
+  )
+})
+
+describe('Board', () => {
+  it('Basic rendering', () => {
+    const renderer = TestRenderer.create(
+      <Game/>
+    )
+    const result = renderer.toJSON()
+    expect(result).toMatchSnapshot()
+  })
+
+  it('Doesn\'t change player after an illegal click', () => {
+    const instance = renderer.instance()
+    instance.handleClick(3, 3)
+    expect(renderer.state('isBlack')).toBe(true)
+  })
+
+  it('Changes player after a legal click', () => {
+    const instance = renderer.instance()
+    instance.handleClick(2, 3)
+    expect(renderer.state('isBlack')).toBe(false)
+  })
+
+  it('Changes score after a legal click', () => {
+    const instance = renderer.instance()
+    instance.handleClick(2, 3)
+    expect(renderer.state('score').BLACK).toEqual(4)
+    expect(renderer.state('score').WHITE).toEqual(1)
+  })
+})
