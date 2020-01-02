@@ -40,4 +40,11 @@ describe('Board', () => {
     expect(renderer.state('score').BLACK).toEqual(4)
     expect(renderer.state('score').WHITE).toEqual(1)
   })
+
+  it('Changes black pawns number after a legal click', () => {
+    const instance = renderer.instance()
+    instance.handleClick(2, 3)
+    renderer.update()
+    expect(renderer.find('.black')).toHaveLength(4)
+  })
 })
