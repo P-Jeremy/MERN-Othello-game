@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Square Basic rendering 1`] = `
+<div
+  className="square"
+  onClick={[Function]}
+>
+  <div
+    className="pawn white"
+  />
+</div>
+`;
