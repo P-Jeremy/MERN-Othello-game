@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import cloneDeep from 'lodash.clonedeep'
 import reversi from 'reversi'
 import Board from '../Board/Board'
+import { Button } from 'react-bootstrap'
 
 const GameGameInstance = reversi.Game
 const game = new GameGameInstance()
@@ -45,9 +46,9 @@ export default class Game extends Component {
     return this.countPoints()
   }
 
-  handlePass = (v) => {
+  handlePass = () => {
     let { game, isBlack, blackPassCount, whitePassCount } = this.state
-    switch (v) {
+    switch (game._nextPieceType) {
       case 'BLACK':
         game._nextPieceType = 'WHITE'
         blackPassCount = blackPassCount + 1
@@ -82,7 +83,9 @@ export default class Game extends Component {
     return this.setState({
       game: cloneDeep(game),
       isBlack: true,
-      score: game.board.countByPieceType()
+      score: game.board.countByPieceType(),
+      whitePassCount: 0,
+      blackPassCount: 0
     })
   }
 
@@ -98,7 +101,8 @@ export default class Game extends Component {
         </div>
         }
         {game.isEnded && <h2>{`${game.getHighScorer()} player wins !`}</h2>}
-        <button onClick={handlReset}>RESET</button>
+        <Button variant="danger" onClick={handlReset}>RESET</Button>
+        <Button onClick={handlePass}>Pass</Button>
         <section>
           <Board click={handleClick} board={game._board} pieceType={game._nextPieceType} handlePass={handlePass}/>
         </section>
