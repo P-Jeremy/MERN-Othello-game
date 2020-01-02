@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import cloneDeep from 'lodash.clonedeep'
-import reversi from 'reversi'
 import Board from '../Board/Board'
+import reversi from 'reversi'
 import { Button } from 'react-bootstrap'
 
 const GameGameInstance = reversi.Game

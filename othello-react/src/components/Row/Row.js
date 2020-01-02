@@ -1,11 +1,11 @@
 import React from 'react'
 import Square from '../Square/Square'
 import PropTypes from 'prop-types'
-import './Column.css'
+import './Row.css'
 
-export default function Column ({ col, click }) {
+export default function Row ({ col, click }) {
   return (
-    < div className="column">
+    < div className="row">
       {col.map((square, i) => (
         <Square
           key={i}
@@ -17,7 +17,7 @@ export default function Column ({ col, click }) {
   )
 }
 
-Column.propTypes = {
+Row.propTypes = {
   col: PropTypes.array,
   click: PropTypes.func
 }

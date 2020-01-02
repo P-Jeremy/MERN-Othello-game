@@ -38,19 +38,4 @@ describe('Square', () => {
     renderer.setProps({ value: 'BLACK' })
     expect(renderer.find('.black')).toHaveLength(1)
   })
-
-  // it('Should have "black" as a className', () => {
-  //   const instance = renderer.root
-  //   const element = instance.findByType('div')
-  //   expect(element.props.className.includes('black')).toBe(true)
-  // })
-
-  // it('Should change "black" className to white on props change', () => {
-  //   renderer.update(<Pawn color={'white'}/>)
-  //   const instance = renderer.root
-  //   const element = instance.findByType('div')
-  //   const result = renderer.toJSON()
-  //   expect(result).toMatchSnapshot()
-  //   expect(element.props.className.includes('white')).toBe(true)
-  // })
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import Column from '../Column/Column'
+import Row from '../Row/Row'
 import PropTypes from 'prop-types'
 import './Board.css'
 
@@ -8,7 +8,7 @@ export default function Board ({ board, click }) {
     <div className="board_container">
       <div className="board">
         {board._squares.map((col, i) =>
-          <Column key={i} click={click} col={col} />
+          <Row key={i} click={click} col={col} />
         )}
       </div>
     </div>
