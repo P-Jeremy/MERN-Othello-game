@@ -1,0 +1,556 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board Basic rendering 1`] = `
+<div
+  className="board_container"
+>
+  <div
+    className="board"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn white"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn black"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn black"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn white"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+      <div
+        className="square"
+        onClick={[Function]}
+      >
+        <div
+          className="pawn undefined"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

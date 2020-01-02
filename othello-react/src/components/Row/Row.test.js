@@ -1,6 +1,6 @@
 import React from 'react'
-import { configure, mount } from 'enzyme'
 import TestRenderer from 'react-test-renderer'
+import { configure, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import Row from './Row'
 import reversi from 'reversi'
@@ -36,6 +36,13 @@ describe('Row', () => {
   it('Basic rendering', () => {
     const renderer = TestRenderer.create(
       <Row click={click} col={col}/>)
+    const result = renderer.toJSON()
+    expect(result).toMatchSnapshot()
+  })
+
+  it('Rendering after black move', () => {
+    const renderer = TestRenderer.create(
+      <Row click={click} col={colAfterBlackMove}/>)
     const result = renderer.toJSON()
     expect(result).toMatchSnapshot()
   })

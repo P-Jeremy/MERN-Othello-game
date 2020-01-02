@@ -70,3 +70,74 @@ exports[`Row Basic rendering 1`] = `
   </div>
 </div>
 `;
+
+exports[`Row Rendering after black move 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn undefined"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn undefined"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn undefined"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn black"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn white"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn black"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn undefined"
+    />
+  </div>
+  <div
+    className="square"
+    onClick={[Function]}
+  >
+    <div
+      className="pawn undefined"
+    />
+  </div>
+</div>
+`;

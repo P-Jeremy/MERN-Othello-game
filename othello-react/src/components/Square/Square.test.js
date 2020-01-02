@@ -11,7 +11,7 @@ const click = jest.fn()
 beforeEach(() => {
   renderer = mount(
     <Square
-      rowI={2}
+      rowI={3}
       colI={3}
       value={'WHITE'}
       click={click} />
