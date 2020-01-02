@@ -1,0 +1,44 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix othello-react",
+    "server": "set NODE_ENV=production && nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:server": "eslint **/*.js --ignore-pattern othello-react/",
+    "lint:client": "npm run lint --prefix othello-react",
+    "lint": "concurrently \"npm run lint:client\" \"npm run lint:server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-react": "^7.17.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.3",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0"
+  }
+}
