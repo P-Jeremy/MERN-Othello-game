@@ -204,7 +204,7 @@ export default class Game extends Component {
               tabIndex={0}
               variant={id === null ? 'primary' : 'danger'}
               onClick={handleNewGame}>
-              {id === null ? 'New game' : 'Reset game'}
+              Nouvelle partie
             </Button>
           </aside>
           {

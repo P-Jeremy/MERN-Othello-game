@@ -33,3 +33,5 @@ app.set('port', port)
 app.set('socketIo', io)
 
 server.listen(8080, () => console.log('PORT', port))
+
+module.exports = app

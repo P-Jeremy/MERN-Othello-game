@@ -7,7 +7,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix othello-react",
     "server": "set NODE_ENV=production && nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest controllers/**/*.test.js",
     "lint:server": "eslint **/*.js --ignore-pattern othello-react/",
     "lint:client": "npm run lint --prefix othello-react",
     "lint": "concurrently \"npm run lint:client\" \"npm run lint:server\""
@@ -21,8 +21,8 @@
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.1.0",
     "jest": "^24.9.0"
   },
@@ -30,6 +30,9 @@
     "hooks": {
       "pre-commit": "npm run lint"
     }
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
