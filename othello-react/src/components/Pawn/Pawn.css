@@ -5,12 +5,14 @@
 }
 
 .black {
-  border: 1px solid black;
+  border: 1px solid white;
+  box-shadow: 3px 3px 3px black;
   background-color: black;
 }
 
 .white {
   border: 1px solid black;
+  box-shadow: 3px 3px 3px black;
   background-color: white;
 }
 

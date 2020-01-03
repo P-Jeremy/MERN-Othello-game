@@ -36,7 +36,7 @@ beforeEach(() => {
   })
 })
 
-describe('Board', () => {
+describe('Game', () => {
   it('Basic rendering', () => {
     const result = renderer.toJSON()
     expect(result).toMatchSnapshot()
@@ -47,25 +47,15 @@ describe('Board', () => {
     expect(instance.state.nextPlayer).toBe('BLACK')
   })
 
+  it('Changes player after a legal click', () => {
+    instance.handleClick(2, 3)
+    expect(instance.state.nextPlayer).toBe('WHITE')
+  })
+
   it('Changes initial score after a legal click', () => {
     TestRenderer.act(() => {
       instance.handleClick(2, 3)
     })
-
     expect(instance.state.score.BLACK).toBe(4)
   })
-
-  // it('Changes score after a legal click', () => {
-  //   const instance = renderer.instance()
-  //   instance.handleClick(2, 3)
-  //   expect(renderer.state('score').BLACK).toEqual(4)
-  //   expect(renderer.state('score').WHITE).toEqual(1)
-  // })
-
-  // it('Changes black pawns number after a legal click', () => {
-  //   const instance = renderer.instance()
-  //   instance.handleClick(2, 3)
-  //   renderer.update()
-  //   expect(renderer.find('.black')).toHaveLength(4)
-  // })
 })

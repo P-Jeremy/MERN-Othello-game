@@ -11,544 +11,1120 @@ exports[`Board Basic rendering 1`] = `
       className="row"
     >
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
     </div>
     <div
       className="row"
     >
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn white"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn black"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn black"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn white"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
-      </div>
-      <div
-        className="square"
-        onClick={[Function]}
-      >
-        <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
     </div>
     <div
       className="row"
     >
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
     </div>
     <div
       className="row"
     >
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn white"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn black"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
       <div
-        className="square"
+        className="zoom"
         onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
       >
         <div
-          className="pawn undefined"
-        />
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn black"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn white"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
       </div>
     </div>
   </div>

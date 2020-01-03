@@ -185,17 +185,21 @@ export default class Game extends Component {
         }
         {game !== null && game.isEnded && <h2>{`${game.getHighScorer()} player wins !`}</h2>}
         <section>
-          {
-            game !== null &&
-            <Board click={handleClick} board={game._board} />
-          }
           <Button
             tabIndex={0}
             variant={id === null ? 'primary' : 'danger'}
             onClick={handleNewGame}>
-            {id === null ? 'New game' : 'Reset'}
+            {id === null ? 'New game' : 'Reset game'}
           </Button>
-          <Button onClick={handlePass}>Pass</Button>
+          <Button
+            tabIndex={0}
+            onClick={handlePass}>
+              Pass turn
+          </Button>
+          {
+            game !== null &&
+            <Board click={handleClick} board={game._board} />
+          }
         </section>
       </div>
     )
