@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Game.css'
 import { Button } from 'react-bootstrap'
 import Board from '../Board/Board'
 import NotifModal from '../NotifModal/Modal'
@@ -6,6 +7,7 @@ import merge from 'lodash.merge'
 import reversi from 'reversi'
 import axios from 'axios'
 import openSocket from 'socket.io-client'
+import Pawn from '../Pawn/Pawn'
 
 const uri = 'http://localhost:8080'
 
@@ -185,7 +187,8 @@ export default class Game extends Component {
       <div className="App" >
         {game !== null && !game.isEnded &&
           <>
-            <h1>{`Player: ${nextPlayer}`}</h1>
+            <h1>Othello</h1>
+            <h2>{`Player: ${nextPlayer}`}</h2>
             <span>
               {
                 `WHITE: ${score === null ? 2 : score.WHITE} points 
@@ -196,23 +199,32 @@ export default class Game extends Component {
         }
         {game !== null && game.isEnded && <h2>{`${game.getHighScorer()} player wins !`}</h2>}
         <section>
-          <Button
-            tabIndex={0}
-            variant={id === null ? 'primary' : 'danger'}
-            onClick={handleNewGame}>
-            {id === null ? 'New game' : 'Reset game'}
-          </Button>
-          {
-            game !== null &&
+          <aside className="aside_left">
             <Button
               tabIndex={0}
-              onClick={handlePass}>
-              Pass turn
+              variant={id === null ? 'primary' : 'danger'}
+              onClick={handleNewGame}>
+              {id === null ? 'New game' : 'Reset game'}
             </Button>
-          }
+          </aside>
           {
             game !== null &&
             <Board click={handleClick} board={game._board} />
+          }
+          {
+            game !== null &&
+            <aside className="aside_right">
+              <div className="pass">
+                <span>
+                  <Pawn color={nextPlayer.toLowerCase()}/>
+                </span>
+                <Button
+                  tabIndex={0}
+                  onClick={handlePass}>
+              Passer
+                </Button>
+              </div>
+            </aside>
           }
         </section>
       </div>

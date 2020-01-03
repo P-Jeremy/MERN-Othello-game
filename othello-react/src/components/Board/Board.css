@@ -1,7 +1,7 @@
 .board {
   flex-wrap: nowrap;
-  max-width: 80rem;
-  max-height: 80rem;
+  max-width: 60rem;
+  max-height: 60rem;
   margin: 0 auto;
 }
 

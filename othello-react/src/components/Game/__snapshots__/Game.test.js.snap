@@ -5,30 +5,29 @@ exports[`Game Basic rendering 1`] = `
   className="App"
 >
   <h1>
-    Player: BLACK
+    Othello
   </h1>
+  <h2>
+    Player: BLACK
+  </h2>
   <span>
     WHITE: 2 points 
             Vs BLACK: 2 points
   </span>
   <section>
-    <button
-      className="btn btn-danger"
-      disabled={false}
-      onClick={[Function]}
-      tabIndex={0}
-      type="button"
+    <aside
+      className="aside_left"
     >
-      Reset game
-    </button>
-    <button
-      className="btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Pass turn
-    </button>
+      <button
+        className="btn btn-danger"
+        disabled={false}
+        onClick={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        Reset game
+      </button>
+    </aside>
     <div
       className="board_container"
     >
@@ -1157,6 +1156,28 @@ exports[`Game Basic rendering 1`] = `
         </div>
       </div>
     </div>
+    <aside
+      className="aside_right"
+    >
+      <div
+        className="pass"
+      >
+        <span>
+          <div
+            className="pawn black"
+          />
+        </span>
+        <button
+          className="btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          Passer
+        </button>
+      </div>
+    </aside>
   </section>
 </div>
 `;

@@ -1,6 +1,6 @@
 const Game = require('../models/Game')
 
-module.exports = class ListController {
+module.exports = class GameController {
   /** Get all the game in Db */
   async getGames (req, res) {
     try {
@@ -66,7 +66,7 @@ module.exports = class ListController {
   };
 
   /** Delete a game in DB */
-  async deleteGame (req, res) {
+  async newGame (req, res) {
     const { id } = req.params
     const { newGame, whitePassCount, blackPassCount } = req.body
     try {

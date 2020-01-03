@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import { Modal, Button } from 'react-bootstrap'
 
 function NotifModal ({ data, click }) {
-  console.log('DATA', data)
-
   return (
     <Modal.Dialog>
       <Modal.Header>
