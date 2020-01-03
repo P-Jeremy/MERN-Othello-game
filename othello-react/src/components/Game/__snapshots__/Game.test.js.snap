@@ -7,25 +7,10 @@ exports[`Board Basic rendering 1`] = `
   <h1>
     Player: BLACK
   </h1>
-  <div>
-    WHITE: 2 points Vs BLACK: 2 points
-  </div>
-  <button
-    className="btn btn-danger"
-    disabled={false}
-    onClick={[Function]}
-    type="button"
-  >
-    RESET
-  </button>
-  <button
-    className="btn btn-primary"
-    disabled={false}
-    onClick={[Function]}
-    type="button"
-  >
-    Pass
-  </button>
+  <span>
+    WHITE: 2 points 
+            Vs BLACK: 2 points
+  </span>
   <section>
     <div
       className="board_container"
@@ -579,6 +564,23 @@ exports[`Board Basic rendering 1`] = `
         </div>
       </div>
     </div>
+    <button
+      className="btn btn-danger"
+      disabled={false}
+      onClick={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      Reset
+    </button>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Pass
+    </button>
   </section>
 </div>
 `;

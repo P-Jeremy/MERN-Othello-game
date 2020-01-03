@@ -88,8 +88,8 @@ export default class Game extends Component {
       whitePassCount,
       blackPassCount,
       game
-    }).then(res => this.setState({ nextPlayer: res.data.game._nextPieceType, blackPassCount, whitePassCount }))
-      .catch(err => err)
+    })
+    return this.setState({ nextPlayer: game._nextPieceType, blackPassCount, whitePassCount })
   }
 
   /**
