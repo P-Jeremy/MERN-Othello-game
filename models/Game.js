@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 var Schema = mongoose.Schema
 
 const gameSchema = new Schema({
-  blackPassCount: { type: Number },
-  whitePassCount: { type: Number },
+  blackPassCount: { type: Number, default: 0 },
+  whitePassCount: { type: Number, default: 0 },
   game: { type: Object }
 })
 

@@ -20,9 +20,8 @@ module.exports = class ListController {
   async addGame (req, res) {
     const { newGame, blackPassCount, whitePassCount } = req.body
     try {
-      const newGameToSave = new Game({ newGame, whitePassCount, blackPassCount })
+      const newGameToSave = new Game({ game: newGame, blackPassCount: blackPassCount, whitePassCount: whitePassCount })
       const result = await newGameToSave.save()
-
       const socketio = req.app.get('socketIo')
       socketio.sockets.emit('gameUpdated', { result: result })
       return res
@@ -39,7 +38,7 @@ module.exports = class ListController {
   /** Update a game */
   async updateGame (req, res) {
     const { id } = req.params
-    const { game, blackPassCount, whitePassCount } = req.body
+    const { game, blackPassCount, whitePassCount, newMove } = req.body
     try {
       const result = await Game.findOneAndUpdate({ _id: id }, {
         $set:
@@ -52,7 +51,7 @@ module.exports = class ListController {
       { new: true }
       )
       const socketio = req.app.get('socketIo')
-      socketio.sockets.emit('gameUpdated', { result: result })
+      socketio.sockets.emit('gameUpdated', { message: `${!newMove ? 'The game has been updated' : 'A move has been played'}`, title: `${!newMove ? 'Update' : 'New move'}`, newMove })
 
       return res
         .status(200)
@@ -72,7 +71,6 @@ module.exports = class ListController {
     const { newGame, whitePassCount, blackPassCount } = req.body
     try {
       const result = await Game.findOneAndUpdate({ _id: id },
-
         { $set: { game: newGame, whitePassCount, blackPassCount } },
         { new: true }
       )

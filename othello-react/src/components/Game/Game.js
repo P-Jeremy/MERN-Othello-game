@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button } from 'react-bootstrap'
 import Board from '../Board/Board'
+import NotifModal from '../NotifModal/Modal'
 import merge from 'lodash.merge'
 import reversi from 'reversi'
 import axios from 'axios'
@@ -21,7 +22,9 @@ export default class Game extends Component {
     score: null,
     id: null,
     blackPassCount: 0,
-    whitePassCount: 0
+    whitePassCount: 0,
+    toggleModal: false,
+    modalData: null
   }
 
   /** MERGE THE RESULT FROM DB INTO A NEW GAME INSTANCE
@@ -58,15 +61,12 @@ export default class Game extends Component {
   }
 
   componentDidMount () {
+    document.title = 'Game'
     this.getGameData()
-    socket.on('gameUpdated', () => this.getGameData())
-  }
-
-  /**
-   * Listens to the socket events
-   */
-  onMessage = () => {
-    return this.getGameData()
+    socket.on('gameUpdated', (data) => {
+      this.getGameData()
+      return this.setState({ modalData: data, toggleModal: data.newMove })
+    })
   }
 
   /**
@@ -81,15 +81,23 @@ export default class Game extends Component {
     }
   }
 
-  updateGame = () => {
+  /**
+   * Update the game in DB
+   */
+  updateGame = (newMove) => {
     const { id, game, blackPassCount, whitePassCount } = this.state
 
     axios.put(`${url}/${id}`, {
       whitePassCount,
       blackPassCount,
-      game
+      game,
+      newMove
     })
     return this.setState({ nextPlayer: game._nextPieceType, blackPassCount, whitePassCount })
+  }
+
+  handleCloseModal = () => {
+    return this.setState({ toggleModal: false })
   }
 
   /**
@@ -105,7 +113,7 @@ export default class Game extends Component {
     if (!report.isSuccess) {
       return
     }
-    this.updateGame()
+    this.updateGame(true)
     return this.countPoints()
   }
 
@@ -159,7 +167,7 @@ export default class Game extends Component {
         score: newGame.board.countByPieceType()
       })
       const res = await axios.post(url, { newGame })
-      this.setState({ id: res.data._id, nextPlayer: res.data._nextPieceType, blackPassCount: 0, whitePassCount: 0 })
+      return this.setState({ id: res.data._id, nextPlayer: res.data._nextPieceType, blackPassCount: 0, whitePassCount: 0 })
     }
     /* ELSE CLEAR THE EXISTING ONE */
     axios.put(`${url}/newGame/${id}`, { newGame, whitePassCount: 0, blackPassCount: 0 })
@@ -168,8 +176,11 @@ export default class Game extends Component {
   }
 
   render () {
-    const { nextPlayer, score, game, id } = this.state
-    const { handleNewGame, handleClick, handlePass } = this
+    const { nextPlayer, score, game, id, toggleModal, modalData } = this.state
+    const { handleNewGame, handleClick, handlePass, handleCloseModal } = this
+    if (toggleModal) {
+      return (<NotifModal data={modalData} click ={handleCloseModal}/>)
+    }
     return (
       <div className="App" >
         {game !== null && !game.isEnded &&
@@ -191,11 +202,14 @@ export default class Game extends Component {
             onClick={handleNewGame}>
             {id === null ? 'New game' : 'Reset game'}
           </Button>
-          <Button
-            tabIndex={0}
-            onClick={handlePass}>
+          {
+            game !== null &&
+            <Button
+              tabIndex={0}
+              onClick={handlePass}>
               Pass turn
-          </Button>
+            </Button>
+          }
           {
             game !== null &&
             <Board click={handleClick} board={game._board} />
