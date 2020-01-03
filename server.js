@@ -9,6 +9,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const server = http.createServer(app)
 const io = socketio.listen(server)
+const gameRouter = require('./routes/gameRouter')
 const mongoConf = process.env.MONGO_CONFIG_URL
 
 mongoose
@@ -23,6 +24,8 @@ mongoose
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use('/api/game', gameRouter)
 
 const port = process.env.PORT || '8080'
 

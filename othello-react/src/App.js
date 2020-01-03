@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Game from './components/Game/Game'
 
-function App () {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-      <section>
-        <Game/>
-      </section>
-    </div>
-  )
+export default class App extends Component {
+  render () {
+    return (
+      <div className="App" >
+        <main>
+          <Game />
+        </main>
+      </div>
+    )
+  }
 }
-
-export default App
