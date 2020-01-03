@@ -51,7 +51,6 @@ describe('Board', () => {
     TestRenderer.act(() => {
       instance.handleClick(2, 3)
     })
-    console.log('STATE', instance.state)
 
     expect(instance.state.score.BLACK).toBe(4)
   })
