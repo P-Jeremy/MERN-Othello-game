@@ -16,6 +16,12 @@ This project is a MERN stack Othello Game
 This project uses a mongoDb Atlas database, to use it, generate a .env file in the root folder.
 This file contains a MONGO_CONFIG_URL key with your atlas credentials
 
+## Install
+
+Clone this repo, run npm i in both root and othello-react folders
+Then run ` npm run start` in the root folder
+
+---
 
 ## Available Scripts
 
@@ -42,6 +48,23 @@ Launches the server tests
 ### `npm run test`
 
 Launches the tests on both sides
+
+### `test:client:coverage`
+
+Shows the test coverage on client side 
+
+### `test:server:coverage`
+
+Shows the test coverage on server side 
+
+### `test:coverage`
+
+Shows the test coverage on both sides 
+
+|       |                                   Tests coverage                           |
+| ----- | :------------------------------------------------------------------------: |
+| Back/ controllers  |            50%             |
+| Front/ src/ components | 77% |
 
 ### `npm run lint:client`
 
