@@ -124,7 +124,7 @@ module.exports = class GameController {
 
       return res
         .status(200)
-        .json(result)
+        .send(result)
         .end()
     } catch (error) {
       return res
@@ -152,7 +152,7 @@ module.exports = class GameController {
       socketio.sockets.emit('gameUpdated', payload)
       return res
         .status(200)
-        .json(result)
+        .send(result)
         .end()
     } catch (error) {
       return res
@@ -163,19 +163,26 @@ module.exports = class GameController {
   }
 
   /** Delete a game in DB */
-  async delete (req, res) {
+  delete (req, res) {
     const { id } = req.params
-    try {
-      const result = await Game.deleteOne({ _id: id })
-      return res
-        .status(200)
-        .json(result)
-        .end()
-    } catch (error) {
-      return res
-        .status(400)
-        .json(error)
-        .end()
-    }
+    console.log('DELETE')
+
+    Game.deleteOne({ _id: id }).then(() => res.status(200).end()).catch(() => res.status(403).end())
+
+    // try {
+    //   const gameToDelete = await Game.findOne({ _id: id })
+    //   const result = await Game.deleteOne({ _id: gameToDelete._id })
+    //   console.log('RESULT DELETE', result)
+
+    //   return res
+    //     .status(200)
+    //     .send(gameToDelete)
+    //     .end()
+    // } catch (error) {
+    //   return res
+    //     .status(400)
+    //     .json(error)
+    //     .end()
+    // }
   }
 }

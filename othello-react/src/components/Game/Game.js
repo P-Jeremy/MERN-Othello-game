@@ -63,6 +63,12 @@ export default class Game extends Component {
       .catch(err => err)
   }
 
+  /**
+   * Allows to create a toaster message depending on the provided payload and
+   * @param {*} payload payload provided by the socket
+   * @param {*} player actual player
+   * @returns a toast() implementation with corresponding message
+   */
   toaster (payload, player) {
     const hour = new Date().getHours()
     const minute = new Date().getMinutes()
@@ -72,10 +78,10 @@ export default class Game extends Component {
         toast.info('Nouvelle partie')
         break
       case 'move':
-        toast.info(`Le joueur ${payload.player} a joué: ${hour}h${minute}m${seconds}`)
+        toast.info(`Le joueur ${player} a joué: ${hour}h${minute}m${seconds}`)
         break
       case 'pass':
-        toast.warn(`Le joueur ${payload.player} a passé`)
+        toast.warn(`Le joueur ${player} a passé`)
         break
       case 'pass++':
         toast.warn(`Le joueur ${player === 'BLACK' ? 'blanc' : 'noir'} a encore passé `)
@@ -139,6 +145,9 @@ export default class Game extends Component {
     return this.countPoints()
   }
 
+  /**
+   * Allows to pass turn
+   */
   handlePass = async () => {
     let { game, blackPassCount, whitePassCount, nextPlayer } = this.state
     let origin = 'pass'
@@ -188,7 +197,7 @@ export default class Game extends Component {
         })
     }
     /* ELSE CLEAR THE EXISTING ONE */
-    axios.put(`${url}/newGame/${id}`, { newGame, whitePassCount: 0, blackPassCount: 0, origin, isTwice })
+    return axios.put(`${url}/newGame/${id}`, { newGame, whitePassCount: 0, blackPassCount: 0, origin, isTwice })
       .then((res) => this.setState(
         {
           id: res.data._id,
