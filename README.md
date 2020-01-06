@@ -49,15 +49,15 @@ Launches the server tests
 
 Launches the tests on both sides
 
-### `test:client:coverage`
+### `npm run test:client:coverage`
 
 Shows the test coverage on client side 
 
-### `test:server:coverage`
+### `npm run test:server:coverage`
 
 Shows the test coverage on server side 
 
-### `test:coverage`
+### `npm run test:coverage`
 
 Shows the test coverage on both sides 
 
