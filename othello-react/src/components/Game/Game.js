@@ -78,14 +78,15 @@ export default class Game extends Component {
         toast.info('Nouvelle partie')
         break
       case 'move':
-        toast.info(`Le joueur ${player} a joué: ${hour}h${minute}m${seconds}`)
+        toast.info(`Le joueur ${payload.player} a joué: ${hour}h${minute}m${seconds}`)
         break
       case 'pass':
-        toast.warn(`Le joueur ${player} a passé`)
+        toast.warn(`Le joueur ${payload.player} a passé`)
         break
       case 'pass++':
         toast.warn(`Le joueur ${player === 'BLACK' ? 'blanc' : 'noir'} a encore passé `)
         toast.error(`Le joueur ${player === 'BLACK' ? 'blanc' : 'noir'} a perdu `)
+        toast.info('Nouvelle partie')
         break
       default:
         break
@@ -93,11 +94,11 @@ export default class Game extends Component {
   }
 
   componentDidMount () {
-    document.title = 'Game'
     this.getGameData()
+    document.title = 'Game'
     socket.on('gameUpdated', (payload) => {
-      this.getGameData()
       this.toaster(payload)
+      this.getGameData()
     })
   }
 
@@ -150,7 +151,7 @@ export default class Game extends Component {
    */
   handlePass = async () => {
     let { game, blackPassCount, whitePassCount, nextPlayer } = this.state
-    let origin = 'pass'
+    let origin
     switch (game._nextPieceType) {
       case 'BLACK':
         game._nextPieceType = 'WHITE'
@@ -168,11 +169,9 @@ export default class Game extends Component {
 
     if (blackPassCount > 1 || whitePassCount > 1) {
       origin = 'pass++'
-      this.toaster({ origin, nextPlayer })
-      this.setState({ whitePassCount: 0, blackPassCount: 0 })
       return this.handleNewGame(origin)
     }
-
+    origin = 'pass'
     await this.setState({ nextPlayer, whitePassCount: whitePassCount, blackPassCount: blackPassCount })
     return this.updateGame({ origin })
   }
