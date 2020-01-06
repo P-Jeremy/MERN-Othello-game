@@ -10,6 +10,8 @@ exports[`Square Basic rendering 1`] = `
   <div
     className="square"
     onClick={[Function]}
+    onDragOver={[Function]}
+    onDrop={[Function]}
     onKeyPress={[Function]}
     tabIndex={-1}
   >

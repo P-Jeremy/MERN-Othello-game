@@ -9,4 +9,6 @@ const server = http.createServer(app)
 const io = socketio.listen(server)
 app.set('socketIo', io)
 
+module.exports = app
+
 server.listen(port, () => console.log('Server listenning on:', port))

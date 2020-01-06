@@ -43,6 +43,15 @@ export default function Square ({ value, click, rowI, colI }) {
       return click(x, y)
     }
   }
+
+  const handleDragOver = (e) => {
+    e.preventDefault()
+  }
+
+  const handlePawnDrop = (x, y) => {
+    return click(x, y)
+  }
+
   return (
     <div
       className="zoom"
@@ -53,7 +62,10 @@ export default function Square ({ value, click, rowI, colI }) {
         tabIndex={-1}
         className="square"
         onKeyPress={(e) => handleEnter(e, rowI, colI)}
-        onClick={() => handleClick(rowI, colI)}>
+        onClick={() => handleClick(rowI, colI)}
+        onDragOver={handleDragOver}
+        onDrop={() => handlePawnDrop(rowI, colI)}
+      >
         {returnPawn(value)}
       </div>
     </div>

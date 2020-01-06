@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import './Game.css'
 import { Button } from 'react-bootstrap'
+import { ToastContainer, toast } from 'react-toastify'
 import Board from '../Board/Board'
-import NotifModal from '../NotifModal/Modal'
 import merge from 'lodash.merge'
-import reversi from 'reversi'
+import reversi from 'reversi/index'
 import axios from 'axios'
 import openSocket from 'socket.io-client'
 import Pawn from '../Pawn/Pawn'
+
+import 'react-toastify/dist/ReactToastify.css'
 
 const uri = 'http://localhost:8080'
 
@@ -15,18 +17,16 @@ const socket = openSocket(uri)
 
 const Reversi = reversi.Game
 
-const url = 'http://localhost:8080/api/game'
+const url = `${uri}/api/game`
 
 export default class Game extends Component {
   state = {
     game: null,
-    nextPlayer: '',
+    nextPlayer: 'BLACK',
     score: null,
     id: null,
     blackPassCount: 0,
-    whitePassCount: 0,
-    toggleModal: false,
-    modalData: null
+    whitePassCount: 0
   }
 
   /** MERGE THE RESULT FROM DB INTO A NEW GAME INSTANCE
@@ -34,18 +34,20 @@ export default class Game extends Component {
    * @param res data from the mongo db
    * @returns game instance of data in state
    */
-  turnDataInGameInstance = (res) => {
+  turnDataInGameInstance = async (res) => {
     const newGame = new Reversi()
     const dbGame = res.data[0].game
     merge(newGame, dbGame)
     const id = res.data[0]._id
-    return this.setState({
+
+    await this.setState({
       id,
       nextPlayer: newGame._nextPieceType,
       game: newGame,
       blackPassCount: res.data[0].blackPassCount,
       whitePassCount: res.data[0].whitePassCount
     })
+    return this.countPoints()
   }
 
   /**
@@ -54,20 +56,42 @@ export default class Game extends Component {
    */
   getGameData = () => {
     axios.get(url).then(res => {
-      if (res.data.length) {
+      if (res.data) {
         this.turnDataInGameInstance(res)
       }
-      return this.countPoints()
     })
       .catch(err => err)
+  }
+
+  toaster (payload, player) {
+    const hour = new Date().getHours()
+    const minute = new Date().getMinutes()
+    const seconds = new Date().getSeconds()
+    switch (payload.origin) {
+      case 'new':
+        toast.info('Nouvelle partie')
+        break
+      case 'move':
+        toast.info(`Le joueur ${payload.player} a joué: ${hour}h${minute}m${seconds}`)
+        break
+      case 'pass':
+        toast.warn(`Le joueur ${payload.player} a passé`)
+        break
+      case 'pass++':
+        toast.warn(`Le joueur ${player === 'BLACK' ? 'blanc' : 'noir'} a encore passé `)
+        toast.error(`Le joueur ${player === 'BLACK' ? 'blanc' : 'noir'} a perdu `)
+        break
+      default:
+        break
+    }
   }
 
   componentDidMount () {
     document.title = 'Game'
     this.getGameData()
-    socket.on('gameUpdated', (data) => {
+    socket.on('gameUpdated', (payload) => {
       this.getGameData()
-      return this.setState({ modalData: data, toggleModal: data.newMove })
+      this.toaster(payload)
     })
   }
 
@@ -86,20 +110,15 @@ export default class Game extends Component {
   /**
    * Update the game in DB
    */
-  updateGame = (newMove) => {
+  updateGame = ({ origin }) => {
     const { id, game, blackPassCount, whitePassCount } = this.state
-
     axios.put(`${url}/${id}`, {
       whitePassCount,
       blackPassCount,
       game,
-      newMove
+      origin
     })
     return this.setState({ nextPlayer: game._nextPieceType, blackPassCount, whitePassCount })
-  }
-
-  handleCloseModal = () => {
-    return this.setState({ toggleModal: false })
   }
 
   /**
@@ -109,19 +128,20 @@ export default class Game extends Component {
  */
   handleClick = (x, y) => {
     const { game } = this.state
+    toast.dismiss()
     /* CHECK IF THE MOVE IS LEGAL */
     const report = game.proceed(x, y)
     /* RETURNS IF ILLEGAL MOVE */
     if (!report.isSuccess) {
       return
     }
-    this.updateGame(true)
+    this.updateGame({ origin: 'move' })
     return this.countPoints()
   }
 
   handlePass = async () => {
     let { game, blackPassCount, whitePassCount, nextPlayer } = this.state
-
+    let origin = 'pass'
     switch (game._nextPieceType) {
       case 'BLACK':
         game._nextPieceType = 'WHITE'
@@ -137,67 +157,72 @@ export default class Game extends Component {
         break
     }
 
-    if (whitePassCount > 1) {
-      alert('BLACK wins')
+    if (blackPassCount > 1 || whitePassCount > 1) {
+      origin = 'pass++'
+      this.toaster({ origin, nextPlayer })
       this.setState({ whitePassCount: 0, blackPassCount: 0 })
-      return this.handleNewGame()
-    }
-
-    if (blackPassCount > 1) {
-      alert('WHITE wins')
-      this.setState({ whitePassCount: 0, blackPassCount: 0 })
-      return this.handleNewGame()
+      return this.handleNewGame(origin)
     }
 
     await this.setState({ nextPlayer, whitePassCount: whitePassCount, blackPassCount: blackPassCount })
-    this.updateGame()
+    return this.updateGame({ origin })
   }
 
   /**
  * Allows to reset the game
  */
-  handleNewGame = async () => {
+  handleNewGame = async (playerHasPassedTwice) => {
     const { id, blackPassCount, whitePassCount } = this.state
+    const origin = 'new'
+    const isTwice = playerHasPassedTwice === 'pass++' ? 'pass++' : null
     const newGame = new Reversi()
     /* IF NO GAME CREATE A NEW ONE */
     if (id === null) {
-      this.setState({
-        game: newGame,
-        whitePassCount: 0,
-        blackPassCount: 0,
-        nextPlayer: newGame._nextPieceType,
-        score: newGame.board.countByPieceType()
-      })
-      const res = await axios.post(url, { newGame })
-      return this.setState({ id: res.data._id, nextPlayer: res.data._nextPieceType, blackPassCount: 0, whitePassCount: 0 })
+      const res = await axios.post(url, { newGame, origin })
+      return this.setState(
+        {
+          game: res.data.game,
+          nextPlayer: res.data.game._nextPieceType,
+          blackPassCount: 0,
+          whitePassCount: 0
+        })
     }
     /* ELSE CLEAR THE EXISTING ONE */
-    axios.put(`${url}/newGame/${id}`, { newGame, whitePassCount: 0, blackPassCount: 0 })
-      .then(() => this.setState({ game: newGame, nextPlayer: newGame._nextPieceType, blackPassCount, whitePassCount, score: null }))
+    axios.put(`${url}/newGame/${id}`, { newGame, whitePassCount: 0, blackPassCount: 0, origin, isTwice })
+      .then((res) => this.setState(
+        {
+          id: res.data._id,
+          game: newGame,
+          nextPlayer: newGame._nextPieceType,
+          blackPassCount,
+          whitePassCount,
+          score: null
+        }))
       .catch(err => err)
   }
 
   render () {
-    const { nextPlayer, score, game, id, toggleModal, modalData } = this.state
-    const { handleNewGame, handleClick, handlePass, handleCloseModal } = this
-    if (toggleModal) {
-      return (<NotifModal data={modalData} click ={handleCloseModal}/>)
-    }
+    const { nextPlayer, score, game, id } = this.state
+    const { handleNewGame, handleClick, handlePass } = this
     return (
-      <div className="App" >
-        {game !== null && !game.isEnded &&
+      <div className="game" >
+        {
+          game !== null && !game._isEnded &&
+          <ToastContainer autoClose={false} />
+        }
+        < h1 > Othello</h1 >
+        {game !== null && !game._isEnded &&
           <>
-            <h1>Othello</h1>
-            <h2>{`Player: ${nextPlayer}`}</h2>
+            <h2>{`Joueur: ${nextPlayer === 'WHITE' ? 'Blanc' : 'Noir'}`}</h2>
             <span>
               {
-                `WHITE: ${score === null ? 2 : score.WHITE} points 
-            Vs BLACK: ${score === null ? 2 : score.BLACK} points`
+                `Noir: ${score === null ? 2 : score.BLACK} points VS
+                Blanc: ${score === null ? 2 : score.WHITE} points `
               }
             </span>
           </>
         }
-        {game !== null && game.isEnded && <h2>{`${game.getHighScorer()} player wins !`}</h2>}
+        {game !== null && game.isEnded && <h2>{`Le joueur ${game.getHighScorer() === 'BLACK' ? 'noir' : 'blanc'} a gagné !`}</h2>}
         <section>
           <aside className="aside_left">
             <Button
@@ -215,19 +240,19 @@ export default class Game extends Component {
             game !== null &&
             <aside className="aside_right">
               <div className="pass">
-                <span>
-                  <Pawn color={nextPlayer.toLowerCase()}/>
+                <span className="draggable" draggable>
+                  <Pawn color={nextPlayer.toLowerCase()} />
                 </span>
                 <Button
                   tabIndex={0}
                   onClick={handlePass}>
-              Passer
+                  Passer
                 </Button>
               </div>
             </aside>
           }
         </section>
-      </div>
+      </div >
     )
   }
 }

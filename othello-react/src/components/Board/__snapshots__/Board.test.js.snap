@@ -19,6 +19,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -36,6 +38,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -53,6 +57,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -70,6 +76,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -87,6 +95,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -104,6 +114,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -121,6 +133,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -138,146 +152,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -299,6 +175,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -316,6 +194,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -333,6 +213,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -350,6 +232,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -367,6 +251,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -384,6 +270,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -401,6 +289,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -418,6 +308,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -439,6 +331,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -456,6 +350,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -473,6 +369,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -490,6 +388,164 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -507,6 +563,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -524,6 +582,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -541,6 +601,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -558,6 +620,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -579,6 +643,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -596,6 +662,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -613,6 +681,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -630,6 +700,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -647,6 +719,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -664,6 +738,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -681,6 +757,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -698,146 +776,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="row"
-    >
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          tabIndex={-1}
-        >
-          <div
-            className="pawn undefined"
-          />
-        </div>
-      </div>
-      <div
-        className="zoom"
-        onClick={[Function]}
-        onKeyPress={[Function]}
-        tabIndex={0}
-      >
-        <div
-          className="square"
-          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -859,6 +799,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -876,6 +818,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -893,6 +837,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -910,6 +856,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -927,6 +875,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -944,6 +894,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -961,6 +913,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -978,6 +932,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -999,6 +955,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1016,6 +974,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1033,6 +993,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1050,6 +1012,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1067,6 +1031,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1084,6 +1050,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1101,6 +1069,8 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >
@@ -1118,6 +1088,164 @@ exports[`Board Basic rendering 1`] = `
         <div
           className="square"
           onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            className="pawn undefined"
+          />
+        </div>
+      </div>
+      <div
+        className="zoom"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="square"
+          onClick={[Function]}
+          onDragOver={[Function]}
+          onDrop={[Function]}
           onKeyPress={[Function]}
           tabIndex={-1}
         >

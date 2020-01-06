@@ -13,6 +13,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -30,6 +32,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -47,6 +51,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -64,6 +70,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -81,6 +89,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -98,6 +108,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -115,6 +127,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -132,6 +146,8 @@ exports[`Row Basic rendering 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -156,6 +172,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -173,6 +191,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -190,6 +210,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -207,6 +229,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -224,6 +248,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -241,6 +267,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -258,6 +286,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >
@@ -275,6 +305,8 @@ exports[`Row Rendering after black move 1`] = `
     <div
       className="square"
       onClick={[Function]}
+      onDragOver={[Function]}
+      onDrop={[Function]}
       onKeyPress={[Function]}
       tabIndex={-1}
     >

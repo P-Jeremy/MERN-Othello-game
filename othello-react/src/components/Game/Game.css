@@ -1,3 +1,14 @@
+.aside_right span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.game {
+  margin-top: 5rem;
+}
+
 button {
   margin: 1rem 3rem;
 }
@@ -14,34 +25,27 @@ section {
   align-items: center;
 }
 
-.pass span {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+@media only screen and (max-width: 930px) {
+  button {
+    margin: 0.5rem;
+  }
 }
 
-@media only screen and (max-width:930px) {
-button {
-  margin: 0.5rem;
-}
-}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  aside {
+    position: absolute;
+    top: 30rem;
+  }
 
-@media only screen and (min-width:0px) and (max-width:767px) {
-aside {
-  position: absolute;
-  top: 25rem;
-}
+  .aside_left {
+    left: 15vw;
+  }
 
-.aside_left {
-  left: 20vW;
-}
+  .aside_right span {
+    display: none;
+  }
 
-.aside_right span {
-  display: none;
-}
-
-.aside_right {
-  right: 20vW;
-}
-
+  .aside_right {
+    right: 15vw;
+  }
 }

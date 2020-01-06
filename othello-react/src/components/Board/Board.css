@@ -3,6 +3,7 @@
   max-width: 60rem;
   max-height: 60rem;
   margin: 0 auto;
+  box-shadow: 20px 10px 10px black;
 }
 
 .board_container {
