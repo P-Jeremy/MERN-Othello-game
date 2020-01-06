@@ -35,6 +35,7 @@ export default class Game extends Component {
    * @returns game instance of data in state
    */
   turnDataInGameInstance = async (res) => {
+    if (!res.data.length) return
     const newGame = new Reversi()
     const dbGame = res.data[0].game
     merge(newGame, dbGame)
@@ -56,7 +57,7 @@ export default class Game extends Component {
    */
   getGameData = () => {
     axios.get(url).then(res => {
-      if (res.data) {
+      if (res) {
         this.turnDataInGameInstance(res)
       }
     })
