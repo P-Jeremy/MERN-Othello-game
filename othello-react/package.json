@@ -24,6 +24,7 @@
     "start": "set PORT=9000 && react-scripts start",
     "build": "react-scripts build",
     "test": "set CI=true &&react-scripts test --env=jsdom",
+    "coverage": "set CI=true &&react-scripts test --env=jsdom src/components --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint src/components/**/*.js"
   },

@@ -9,6 +9,7 @@
     "server": "set NODE_ENV=production && nodemon server.js",
     "test:server": "mocha test/*.test.js --exit",
     "test:client": "npm test --prefix othello-react",
+    "test:client:coverage": "npm run coverage --prefix othello-react",
     "lint:server": "eslint **/*.js --ignore-pattern othello-react/",
     "lint:client": "npm run lint --prefix othello-react",
     "lint": "concurrently \"npm run lint:client\" \"npm run lint:server\"",

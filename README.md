@@ -43,6 +43,10 @@ Launches the server tests
 
 Launches the tests on both sides
 
+### `test:client:coverage`
+
+Shows the test coverage on client side 
+
 ### `npm run lint:client`
 
 Launches the client linter
